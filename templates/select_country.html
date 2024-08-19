@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Country</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gray-100">
+    <div class="max-w-md w-full bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105 duration-300 p-6">
+        <h1 class="text-2xl font-bold text-gray-800 text-center mb-4">Select a Country</h1>
+        <form action="{{ url_for('country_info') }}" method="POST">
+            <div class="relative mb-4">
+                <select name="country" class="block appearance-none w-full bg-gray-200 border border-gray-400 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-blue-500 hover:bg-gray-300 transition duration-200 ease-in-out">
+                    {% for country in countries %}
+                        <option value="{{ country }}">{{ country }}</option>
+                    {% endfor %}
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>
+                </div>
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg shadow-lg hover:bg-blue-400 transition duration-200 ease-in-out transform hover:translate-y-1">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+</html>
