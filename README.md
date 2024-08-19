@@ -71,6 +71,16 @@ The required Python packages are listed in the `requirements.txt` file. These in
 - `beautifulsoup4`: For parsing HTML content.
 - `leaflet`: For embedding interactive maps (included via CDN).
 
+## Docker
+Build the app
+```bash
+docker build -t country-info-app . 
+```
+Run the app
+```bash
+docker run -p 5000:5000 country-info-app
+```
+
 ## Contributing
 
 Contributions are welcome! If you have suggestions for improvements or new features, please open an issue or submit a pull request.

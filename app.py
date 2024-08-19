@@ -1,7 +1,5 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request
 import sqlite3
-import requests
-from bs4 import BeautifulSoup
 from scrapper import Pays
 app = Flask(__name__)
 
