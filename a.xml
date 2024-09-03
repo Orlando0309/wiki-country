@@ -1,0 +1,1584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="21.2.5.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="XtraReportdossieranesthesiquebeaujolais" SnapGridSize="31.75" ReportUnit="TenthsOfAMillimeter" Margins="58, 46, 165, 54" PaperKind="A4" PageWidth="2100" PageHeight="4000" Version="21.2" DataSource="#Ref-0" TextAlignment="BottomCenter" Dpi="254" Padding="10,10,10,10,254">
+  <Extensions>
+    <Item1 Ref="2" Key="VSReportExtInfo" Value=".repx" />
+  </Extensions>
+  <Parameters>
+    <Item1 Ref="4" Visible="false" Name="Nom" />
+    <Item2 Ref="5" Visible="false" Name="Prenom" />
+    <Item3 Ref="6" Visible="false" Name="antirelais1" />
+    <Item4 Ref="7" Visible="false" Name="antirelais2" />
+    <Item5 Ref="8" Visible="false" Name="TabacOui" />
+    <Item6 Ref="9" Visible="false" Name="AlcoolOui" />
+    <Item7 Ref="10" Visible="false" Name="ToxicoOui" />
+    <Item8 Ref="11" Visible="false" Name="GlaucomeN" />
+    <Item9 Ref="12" Visible="false" Name="GlaucomeO" />
+    <Item10 Ref="13" Visible="false" Name="dist_thyrom_inf65" />
+    <Item11 Ref="14" Visible="false" Name="dist_thyromsup65" />
+    <Item12 Ref="15" Visible="false" Name="DentsTotal" />
+    <Item13 Ref="16" Name="ProgPre" />
+    <Item14 Ref="17" Name="Allergies" />
+    <Item15 Ref="18" Name="CvSympto" />
+    <Item16 Ref="19" Name="CvAngor" />
+    <Item17 Ref="20" Name="CvClaudications" />
+    <Item18 Ref="21" Name="CvPouls" />
+    <Item19 Ref="22" Name="TraitementSansIncidence" />
+    <Item20 Ref="23" Name="TraitementAucun" />
+    <Item21 Ref="24" Name="PulmoSympto" />
+    <Item22 Ref="25" Name="PulmoToux" />
+    <Item23 Ref="26" Name="PulmoExam" />
+    <Item24 Ref="27" Name="Neuro" />
+    <Item25 Ref="28" Name="UroNephrologie" />
+    <Item26 Ref="29" Name="Dig" />
+    <Item27 Ref="30" Name="DiversText" />
+    <Item28 Ref="31" Name="ScoresUrgence" />
+    <Item29 Ref="32" Name="ExamColonne" />
+    <Item30 Ref="33" ValueInfo="0" Name="ProtoAnes" />
+    <Item31 Ref="34" Name="Dents" />
+    <Item32 Ref="35" Name="ChirParticulier" />
+    <Item33 Ref="36" Name="CsExt" />
+    <Item34 Ref="37" Name="DentsParo" />
+    <Item35 Ref="38" Name="Metabolisme" />
+    <Item36 Ref="39" Name="CvExam" />
+    <Item37 Ref="40" Name="DigAins" />
+    <Item38 Ref="41" Name="IntubationPrevue" />
+    <Item39 Ref="42" Name="Antibioprophylaxie" />
+    <Item40 Ref="43" Name="FonctionVasc" />
+    <Item41 Ref="44" ValueInfo="0" Name="HemoRisqueThrombo" />
+    <Item42 Ref="45" Name="HemoRisqueHemorragie" />
+    <Item43 Ref="46" Name="MCJText" />
+    <Item44 Ref="47" Name="InfoPatient" />
+    <Item45 Ref="48" Name="TraitementsPerso" />
+    <Item46 Ref="49" Visible="false" Name="antirelais3" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="50" ControlType="DetailBand" Name="Detail" FillEmptySpace="true" HeightF="2800" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 14pt" Padding="10,0,0,0,254">
+      <Controls>
+        <Item1 Ref="51" ControlType="XRTable" Name="Global" SizeF="1980,2452.979" LocationFloat="0,0" Dpi="254">
+          <Rows>
+            <Item1 Ref="52" ControlType="XRTableRow" Name="InfoPatientRow" Weight="0.89820816202052767" Dpi="254">
+              <Cells>
+                <Item1 Ref="53" ControlType="XRTableCell" Name="InfoPatientGauche" Weight="2.0687041580722809" CanShrink="true" ProcessNullValues="SuppressAndShrink" Text="InfoPatientGauche" Dpi="254">
+                  <Controls>
+                    <Item1 Ref="54" ControlType="XRTable" Name="xrTable3" SizeF="1320,141" LocationFloat="0,0" Dpi="254">
+                      <Rows>
+                        <Item1 Ref="55" ControlType="XRTableRow" Name="Row1" Weight="0.98251009827678049" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="56" ControlType="XRTableCell" Name="NomLabel" Weight="0.23116794109666972" TextFormatString="Nom : {0}" Multiline="true" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 10pt, style=Bold">
+                              <ExpressionBindings>
+                                <Item1 Ref="57" EventName="BeforePrint" PropertyName="Text" Expression="[Nom]" />
+                              </ExpressionBindings>
+                              <StylePriority Ref="58" UseFont="false" UseTextAlignment="false" />
+                            </Item1>
+                            <Item2 Ref="59" ControlType="XRTableCell" Name="AgeLabel" Weight="0.1111384261231237" CanGrow="false" TextFormatString="Age : {0} ans" Multiline="true" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 10pt, style=Bold">
+                              <ExpressionBindings>
+                                <Item1 Ref="60" EventName="BeforePrint" PropertyName="Text" Expression="[Age]" />
+                              </ExpressionBindings>
+                              <StylePriority Ref="61" UseFont="false" UseTextAlignment="false" />
+                            </Item2>
+                            <Item3 Ref="62" ControlType="XRTableCell" Name="DateNaissanceLabel" Weight="0.11558396756366027" CanGrow="false" TextFormatString="{0:dd/MM/yyyy}" Multiline="true" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 10pt, style=Bold">
+                              <ExpressionBindings>
+                                <Item1 Ref="63" EventName="BeforePrint" PropertyName="Text" Expression="[DateNaissance]" />
+                              </ExpressionBindings>
+                              <StylePriority Ref="64" UseFont="false" UseTextAlignment="false" />
+                            </Item3>
+                            <Item4 Ref="65" ControlType="XRTableCell" Name="Poids" Weight="0.12892056230985843" CanGrow="false" CanShrink="true" TextFormatString="Poids : {0} kg" Multiline="true" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 10pt, style=Bold">
+                              <ExpressionBindings>
+                                <Item1 Ref="66" EventName="BeforePrint" PropertyName="Text" Expression="[Poids]" />
+                              </ExpressionBindings>
+                              <StylePriority Ref="67" UseFont="false" UseTextAlignment="false" />
+                            </Item4>
+                          </Cells>
+                        </Item1>
+                        <Item2 Ref="68" ControlType="XRTableRow" Name="Row2" Weight="0.98251009827678049" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="69" ControlType="XRTableCell" Name="PrenomCell" Weight="0.23116794109666972" TextFormatString="Prenom : {0}" Multiline="true" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 10pt, style=Bold">
+                              <ExpressionBindings>
+                                <Item1 Ref="70" EventName="BeforePrint" PropertyName="Text" Expression="[Prenom]" />
+                              </ExpressionBindings>
+                              <StylePriority Ref="71" UseFont="false" UseTextAlignment="false" />
+                            </Item1>
+                            <Item2 Ref="72" ControlType="XRTableCell" Name="Profession" Weight="0.22672239070210942" TextFormatString="Profession : {0}" Multiline="true" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 10pt, style=Bold">
+                              <ExpressionBindings>
+                                <Item1 Ref="73" EventName="BeforePrint" PropertyName="Text" Expression="[Profession]" />
+                              </ExpressionBindings>
+                              <StylePriority Ref="74" UseFont="false" UseTextAlignment="false" />
+                            </Item2>
+                            <Item3 Ref="75" ControlType="XRTableCell" Name="Taille" Weight="0.12892056529453297" TextFormatString="Taille : {0} cm" Multiline="true" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 10pt, style=Bold">
+                              <ExpressionBindings>
+                                <Item1 Ref="76" EventName="BeforePrint" PropertyName="Text" Expression="[Taille]" />
+                              </ExpressionBindings>
+                              <StylePriority Ref="77" UseFont="false" UseTextAlignment="false" />
+                            </Item3>
+                          </Cells>
+                        </Item2>
+                        <Item3 Ref="78" ControlType="XRTableRow" Name="Row3" Weight="0.98251001853255748" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="79" ControlType="XRTableCell" Name="Intervention" Weight="0.45789033315544936" TextFormatString="Intervention : {0}" Multiline="true" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 10pt, style=Bold">
+                              <ExpressionBindings>
+                                <Item1 Ref="80" EventName="BeforePrint" PropertyName="Text" Expression="[InterventionText]" />
+                              </ExpressionBindings>
+                              <StylePriority Ref="81" UseFont="false" UseTextAlignment="false" />
+                            </Item1>
+                            <Item2 Ref="82" ControlType="XRTableCell" Name="tableCell36" Weight="0.12892056393786275" TextFormatString="IMC : {0}" Multiline="true" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 10pt, style=Bold">
+                              <ExpressionBindings>
+                                <Item1 Ref="83" EventName="BeforePrint" PropertyName="Text" Expression="[Imc]" />
+                              </ExpressionBindings>
+                              <StylePriority Ref="84" UseFont="false" UseTextAlignment="false" />
+                            </Item2>
+                          </Cells>
+                        </Item3>
+                      </Rows>
+                    </Item1>
+                  </Controls>
+                </Item1>
+                <Item2 Ref="85" ControlType="XRTableCell" Name="InfoPatientDroite" Weight="1.0343520790361402" Multiline="true" Text="InfoPatientDroite" Dpi="254">
+                  <Controls>
+                    <Item1 Ref="86" ControlType="XRTable" Name="table5" SizeF="660,141" LocationFloat="0,0" Dpi="254">
+                      <Rows>
+                        <Item1 Ref="87" ControlType="XRTableRow" Name="InfoPatientDroiteRow1" Weight="1" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="88" ControlType="XRTableCell" Name="DateIntervention" Weight="0.019560363236443737" TextFormatString="Date : {0:dd/MM/yy}" Multiline="true" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 10pt">
+                              <ExpressionBindings>
+                                <Item1 Ref="89" EventName="BeforePrint" PropertyName="Text" Expression="[DateInter]" />
+                              </ExpressionBindings>
+                              <StylePriority Ref="90" UseFont="false" UseTextAlignment="false" />
+                            </Item1>
+                            <Item2 Ref="91" ControlType="XRTableCell" Name="inter_rea" Weight="0.019560363236443737" CanShrink="true" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 10pt">
+                              <ExpressionBindings>
+                                <Item1 Ref="92" EventName="BeforePrint" PropertyName="Text" Expression="?ChirParticulier" />
+                              </ExpressionBindings>
+                              <StylePriority Ref="93" UseFont="false" UseTextAlignment="false" />
+                            </Item2>
+                          </Cells>
+                        </Item1>
+                        <Item2 Ref="94" ControlType="XRTableRow" Name="InfoPatientDroiteRow2" Weight="1" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="95" ControlType="XRTableCell" Name="tableCell31" Weight="0.039120726472887474" TextFormatString="Endormi par : Dr {0}" Multiline="true" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 10pt, style=Bold">
+                              <ExpressionBindings>
+                                <Item1 Ref="96" EventName="BeforePrint" PropertyName="Text" Expression="[AnesBloc]" />
+                              </ExpressionBindings>
+                              <StylePriority Ref="97" UseFont="false" UseTextAlignment="false" />
+                            </Item1>
+                          </Cells>
+                        </Item2>
+                        <Item3 Ref="98" ControlType="XRTableRow" Name="InfoPatientDroiteRow3" Weight="1" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="99" ControlType="XRTableCell" Name="tableCell32" Weight="0.039120726472887474" TextFormatString="Par : {0}" Multiline="true" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 10pt">
+                              <ExpressionBindings>
+                                <Item1 Ref="100" EventName="BeforePrint" PropertyName="Text" Expression="[Praticien]" />
+                              </ExpressionBindings>
+                              <StylePriority Ref="101" UseFont="false" UseTextAlignment="false" />
+                            </Item1>
+                          </Cells>
+                        </Item3>
+                      </Rows>
+                    </Item1>
+                  </Controls>
+                </Item2>
+              </Cells>
+            </Item1>
+            <Item2 Ref="102" ControlType="XRTableRow" Name="tableRow42" Weight="0.3185135054505866" Dpi="254">
+              <Cells>
+                <Item1 Ref="103" ControlType="XRTableCell" Name="tableCell50" Weight="3.1030562371084209" TextFormatString="Historique clinique : {0}" Multiline="true" Text="tableCell50" Dpi="254" Font="Times New Roman, 10pt" BackColor="Transparent" Padding="10,0,0,0,254">
+                  <ExpressionBindings>
+                    <Item1 Ref="104" EventName="BeforePrint" PropertyName="Text" Expression="[HistoireClinique]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="105" UseFont="false" UseBackColor="false" UsePadding="false" />
+                </Item1>
+              </Cells>
+            </Item2>
+            <Item3 Ref="106" ControlType="XRTableRow" Name="tableRow44" Weight="0.3185135054505866" Dpi="254">
+              <Cells>
+                <Item1 Ref="107" ControlType="XRTableCell" Name="tableCell51" Weight="3.1030562371084209" Multiline="true" Dpi="254" Font="Times New Roman, 11.44pt, charSet=0" BackColor="Transparent" Padding="10,0,0,0,254">
+                  <StylePriority Ref="108" UseFont="false" UseBackColor="false" UsePadding="false" />
+                </Item1>
+              </Cells>
+            </Item3>
+            <Item4 Ref="109" ControlType="XRTableRow" Name="tableRow41" Weight="0.3185135054505866" Dpi="254">
+              <Cells>
+                <Item1 Ref="110" ControlType="XRTableCell" Name="tableCell49" Weight="3.1030562371084209" Multiline="true" Dpi="254" Font="Times New Roman, 11.44pt, charSet=0" BackColor="Transparent" Padding="10,0,0,0,254">
+                  <StylePriority Ref="111" UseFont="false" UseBackColor="false" UsePadding="false" />
+                </Item1>
+              </Cells>
+            </Item4>
+            <Item5 Ref="112" ControlType="XRTableRow" Name="Reste" Weight="9.6317160805739164" Dpi="254">
+              <Cells>
+                <Item1 Ref="113" ControlType="XRTableCell" Name="GaucheCell" Weight="1.0343520790361402" CanShrink="true" Multiline="true" Text="GaucheCell" Dpi="254" Borders="Left, Top, Right">
+                  <Controls>
+                    <Item1 Ref="114" ControlType="XRTable" Name="Gauche" SizeF="660,1500" LocationFloat="0,0" Dpi="254" Borders="All" BorderWidth="1">
+                      <Rows>
+                        <Item1 Ref="115" ControlType="XRTableRow" Name="AnteChirRow" Weight="1.49055114562560873" Dpi="254" Borders="Left, Top, Right">
+                          <Cells>
+                            <Item1 Ref="116" ControlType="XRTableCell" Name="AnteChir" Weight="1.5" CanShrink="true" ProcessNullValues="SuppressAndShrink" Text="AnteChir" Dpi="254" Font="Times New Roman, 11pt, charSet=0" Borders="All">
+                              <Controls>
+                                <Item1 Ref="117" ControlType="XRTable" Name="AntecedentTable" SizeF="660,40" LocationFloat="0,47" Dpi="254" Borders="None">
+                                  <Rows>
+                                    <Item1 Ref="118" ControlType="XRTableRow" Name="AnteEmptyRow" Weight="0.14514310801996294" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="119" ControlType="XRTableCell" Name="AnteEmptyCell" Weight="3" CanGrow="false" CanShrink="true" Dpi="254" Font="Times New Roman, 11pt">
+                                          <StylePriority Ref="120" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item1>
+                                  </Rows>
+                                  <StylePriority Ref="121" UseBorders="false" />
+                                </Item1>
+                                <Item2 Ref="122" ControlType="XRLabel" Name="xrLabel2" Multiline="true" AutoWidth="true" Text="ANTECEDENTS CHIRURGICAUX" TextAlignment="MiddleCenter" SizeF="659.5002,47" LocationFloat="0,6.10351563E-05" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="20,20,0,0,254" Borders="None">
+                                  <StylePriority Ref="123" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="124" UseFont="false" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                          <StylePriority Ref="125" UseBorders="false" />
+                        </Item1>
+                        <Item2 Ref="126" ControlType="XRTableRow" Name="CardioVascRow" Weight="1.6240156504704242" Dpi="254" Borders="All">
+                          <Cells>
+                            <Item1 Ref="127" ControlType="XRTableCell" Name="CardioVasc" Weight="2.5" CanShrink="true" ProcessNullValues="SuppressAndShrink" Text="CardioVasc" Dpi="254" Borders="Left, Right, Bottom">
+                              <Controls>
+                                <Item1 Ref="128" ControlType="XRTable" Name="table1" SizeF="660,480" LocationFloat="0,47" Dpi="254" Borders="None">
+                                  <Rows>
+                                    <Item1 Ref="129" ControlType="XRTableRow" Name="tableRow1" Weight="0.062898426736983759" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="130" ControlType="XRTableCell" Name="tableCell3" Weight="3" CanShrink="true" TextFormatString="Antecedents : {0}" Multiline="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="131" EventName="BeforePrint" PropertyName="Text" Expression="[ListeCardioAntecedent]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="132" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item1>
+                                    <Item2 Ref="133" ControlType="XRTableRow" Name="tableRow31" Weight="0.062898426736983759" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="134" ControlType="XRTableCell" Name="tableCell38" Weight="3" CanShrink="true" Multiline="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="135" EventName="BeforePrint" PropertyName="Text" Expression="[CvAtcdText]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="136" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item2>
+                                    <Item3 Ref="137" ControlType="XRTableRow" Name="tableRow2" Weight="0.062898426505690108" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="138" ControlType="XRTableCell" Name="xrTableCell185" Weight="3" Text="Symptomatologie : " Dpi="254" Font="Times New Roman, 9pt, style=Bold">
+                                          <StylePriority Ref="139" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item3>
+                                    <Item4 Ref="140" ControlType="XRTableRow" Name="tableRow3" Weight="0.0628984265056901" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="141" ControlType="XRTableCell" Name="tableCell4" Weight="3" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="142" EventName="BeforePrint" PropertyName="Text" Expression="?CvSympto" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="143" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item4>
+                                    <Item5 Ref="144" ControlType="XRTableRow" Name="tableRow4" Weight="0.062898426505690108" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="145" ControlType="XRTableCell" Name="tableCell5" Weight="3" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="146" EventName="BeforePrint" PropertyName="Text" Expression="?CvAngor" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="147" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item5>
+                                    <Item6 Ref="148" ControlType="XRTableRow" Name="tableRow5" Weight="0.062898426505690122" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="149" ControlType="XRTableCell" Name="cfoncvasc" Weight="3" CanShrink="true" Multiline="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="150" EventName="BeforePrint" PropertyName="Text" Expression="?FonctionVasc" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="151" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item6>
+                                    <Item7 Ref="152" ControlType="XRTableRow" Name="tableRow6" Weight="0.062898426505690108" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="153" ControlType="XRTableCell" Name="tableCell6" Weight="3" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="154" EventName="BeforePrint" PropertyName="Text" Expression="?CvClaudications" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="155" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item7>
+                                    <Item8 Ref="156" ControlType="XRTableRow" Name="tableRow10" Weight="0.062898426505690108" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="157" ControlType="XRTableCell" Name="tableCell7" Weight="3" CanShrink="true" Multiline="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="158" EventName="BeforePrint" PropertyName="Text" Expression="[CsTextExt]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="159" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item8>
+                                    <Item9 Ref="160" ControlType="XRTableRow" Name="tableRow7" Weight="0.062898426505690108" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="161" ControlType="XRTableCell" Name="tableCell8" Weight="0.88514449030647391" CanShrink="true" Text="Examens : " Dpi="254" Font="Times New Roman, 9pt, style=Bold">
+                                          <StylePriority Ref="162" UseFont="false" />
+                                        </Item1>
+                                        <Item2 Ref="163" ControlType="XRTableCell" Name="tableCell9" Weight="1.1035163415621696" CanShrink="true" TextFormatString="PAS : {0}" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="164" EventName="BeforePrint" PropertyName="Text" Expression="[CvPas]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="165" UseFont="false" />
+                                        </Item2>
+                                        <Item3 Ref="166" ControlType="XRTableCell" Name="xrTableCell235" Weight="1.0113391681313564" CanShrink="true" TextFormatString="PAD : {0}" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="167" EventName="BeforePrint" PropertyName="Text" Expression="[CvPad]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="168" UseFont="false" />
+                                        </Item3>
+                                      </Cells>
+                                    </Item9>
+                                    <Item10 Ref="169" ControlType="XRTableRow" Name="tableRow8" Weight="0.062898426369361438" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="170" ControlType="XRTableCell" Name="tableCell10" Weight="1.0013778017933366" CanShrink="true" TextFormatString="Pouls : {0}" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="171" EventName="BeforePrint" PropertyName="Text" Expression="[CvPouls]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="172" UseFont="false" />
+                                        </Item1>
+                                        <Item2 Ref="173" ControlType="XRTableCell" Name="tableCell11" Weight="1.9986221982066637" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="174" EventName="BeforePrint" PropertyName="Text" Expression="?CvPouls" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="175" UseFont="false" />
+                                        </Item2>
+                                      </Cells>
+                                    </Item10>
+                                    <Item11 Ref="176" ControlType="XRTableRow" Name="tableRow29" Weight="0.062898426369361438" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="177" ControlType="XRTableCell" Name="tableCell37" Weight="3" CanShrink="true" Multiline="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="178" EventName="BeforePrint" PropertyName="Text" Expression="?CvExam" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="179" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item11>
+                                    <Item12 Ref="180" ControlType="XRTableRow" Name="tableRow11" Weight="0.062898436907609934" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="181" ControlType="XRTableCell" Name="tableCell13" Weight="1.973052818488183" CanShrink="true" Multiline="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="182" EventName="BeforePrint" PropertyName="Text" Expression="[CvExamCliniqueCardio]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="183" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item12>
+                                  </Rows>
+                                  <StylePriority Ref="184" UsePadding="false" UseBorders="false" />
+                                </Item1>
+                                <Item2 Ref="185" ControlType="XRLabel" Name="xrLabel110" Text="CARDIOVASCULAIRE" TextAlignment="MiddleCenter" SizeF="660,47" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="5,5,0,0,254" Borders="None">
+                                  <StylePriority Ref="186" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="187" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                          <StylePriority Ref="188" UseBorders="false" />
+                        </Item2>
+                        <Item3 Ref="189" ControlType="XRTableRow" Name="ChangementTraitementRow" Weight="0.44291335921920694" Dpi="254" Borders="All">
+                          <Cells>
+                            <Item1 Ref="190" ControlType="XRTableCell" Name="ChangementTraitement" Weight="2.5" CanShrink="true" Text="ChangementTraitement" Dpi="254" Borders="Left, Right, Bottom">
+                              <Controls>
+                                <Item1 Ref="191" ControlType="XRLabel" Name="changements_entete" Text="CHANGEMENTS TRAITEMENTS" TextAlignment="MiddleCenter" SizeF="660,47" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 10pt" ForeColor="Black" BackColor="WhiteSmoke" Padding="0,0,3,0,254" Borders="None">
+                                  <StylePriority Ref="192" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item1>
+                                <Item2 Ref="193" ControlType="XRTable" Name="changements_antirelais" SizeF="660,113.608337" LocationFloat="0,47" Dpi="254" Borders="Left">
+                                  <Rows>
+                                    <Item1 Ref="194" ControlType="XRTableRow" Name="xrTableRow19" Weight="1.0005984546087652" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="195" ControlType="XRTableCell" Name="xrTableCell24" Weight="2.7603020474208306" CanShrink="true" ProcessNullValues="SuppressAndShrink" Text="xrTableCell34" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 9pt" Borders="None">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="196" EventName="BeforePrint" PropertyName="Text" Expression="?antirelais1" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="197" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item1>
+                                    <Item2 Ref="198" ControlType="XRTableRow" Name="xrTableRow29" Weight="1.0005985020257562" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="199" ControlType="XRTableCell" Name="xrTableCell46" Weight="2.76030204742083" CanShrink="true" ProcessNullValues="SuppressAndShrink" Text="xrTableCell44" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 9pt" Borders="None">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="200" EventName="BeforePrint" PropertyName="Text" Expression="?antirelais2" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="201" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item2>
+                                    <Item3 Ref="202" ControlType="XRTableRow" Name="tableRow38" Weight="1.0005985020257562" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="203" ControlType="XRTableCell" Name="tableCell45" Weight="2.76030204742083" Multiline="true" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 9pt" Borders="None">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="204" EventName="BeforePrint" PropertyName="Text" Expression="?antirelais3" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="205" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item3>
+                                  </Rows>
+                                  <StylePriority Ref="206" UseBorders="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="207" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                          <StylePriority Ref="208" UseBorders="false" />
+                        </Item3>
+                        <Item4 Ref="209" ControlType="XRTableRow" Name="TraitementRow" Weight="0.59055114562560884" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="210" ControlType="XRTableCell" Name="Traitement" Weight="3.5" CanShrink="true" ProcessNullValues="SuppressAndShrink" Text="Traitement" Dpi="254" Borders="Left, Right, Bottom">
+                              <Controls>
+                                <Item1 Ref="211" ControlType="XRTable" Name="TraitementTable" TextAlignment="BottomCenter" SizeF="660,85" LocationFloat="0,47" Dpi="254" BackColor="Transparent" Borders="Left, Bottom">
+                                  <Rows>
+                                    <Item1 Ref="212" ControlType="XRTableRow" Name="xrTableRow1" Weight="0.18455727517075515" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="213" ControlType="XRTableCell" Name="TraitementLibelle" Weight="2.5710829235249664" CanShrink="true" ProcessNullValues="SuppressAndShrink" TextAlignment="MiddleLeft" Dpi="254" Font="Times New Roman, 7pt" Borders="None">
+                                          <StylePriority Ref="214" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item1>
+                                    <Item2 Ref="215" ControlType="XRTableRow" Name="xrTableRow7" Weight="1.476458143249628" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="216" ControlType="XRTableCell" Name="traitement_sans_incidence" Weight="2.5710829235249655" CanShrink="true" ProcessNullValues="SuppressAndShrink" TextAlignment="BottomCenter" Dpi="254" Font="Times New Roman, 10pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="217" EventName="BeforePrint" PropertyName="Text" Expression="?TraitementSansIncidence" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="218" UseFont="false" UseTextAlignment="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item2>
+                                    <Item3 Ref="219" ControlType="XRTableRow" Name="xrTableRow28" Weight="1.4764581606845517" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="220" ControlType="XRTableCell" Name="aucun_traitement" Weight="2.5710829235249655" CanShrink="true" ProcessNullValues="SuppressAndShrink" Dpi="254" Font="Times New Roman, 10pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="221" EventName="BeforePrint" PropertyName="Text" Expression="?TraitementAucun" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="222" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item3>
+                                  </Rows>
+                                  <StylePriority Ref="223" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item1>
+                                <Item2 Ref="224" ControlType="XRLabel" Name="xrLabel3" Text="         TRAITEMENTS                 m    m     s      c " TextAlignment="MiddleLeft" SizeF="660,47" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 9pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="0,0,3,0,254" Borders="None">
+                                  <StylePriority Ref="225" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="226" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item4>
+                        <Item5 Ref="227" ControlType="XRTableRow" Name="ExploPreOpRow" Weight="1.1811022912512179" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="228" ControlType="XRTableCell" Name="ExplorationPreOp" Weight="4.5588426880431125" CanShrink="true" ProcessNullValues="SuppressAndShrink" Text="ExplorationPreOp" Dpi="254" Font="Times New Roman, 12pt, charSet=0" Borders="None">
+                              <Controls>
+                                <Item1 Ref="229" ControlType="XRTable" Name="xrTable38" SizeF="660,320" LocationFloat="0,47.00037" Dpi="254" Padding="10,0,0,0,254" Borders="None">
+                                  <Rows>
+                                    <Item1 Ref="230" ControlType="XRTableRow" Name="xrTableRow143" Weight="0.860770366887345" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="231" ControlType="XRTableCell" Name="explo_cs_ext" Weight="3" CanShrink="true" ProcessNullValues="SuppressAndShrink" Text="Consultation externe :" Dpi="254" Font="Times New Roman, 9pt" Padding="10,0,0,0,254">
+                                          <StylePriority Ref="232" UseFont="false" UsePadding="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item1>
+                                    <Item2 Ref="233" ControlType="XRTableRow" Name="xrTableRow145" Weight="0.860770366887345" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="234" ControlType="XRTableCell" Name="cs_cardio_ext" Weight="3" CanShrink="true" ProcessNullValues="SuppressAndShrink" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="235" EventName="BeforePrint" PropertyName="Text" Expression="?CsExt" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="236" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item2>
+                                    <Item3 Ref="237" ControlType="XRTableRow" Name="xrTableRow146" Weight="0.8607703668873451" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="238" ControlType="XRTableCell" Name="yugh" Weight="3" CanShrink="true" ProcessNullValues="SuppressAndShrink" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="239" EventName="BeforePrint" PropertyName="Text" Expression="[CsTextExt]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="240" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item3>
+                                    <Item4 Ref="241" ControlType="XRTableRow" Name="xrTableRow150" Weight="0.8607703668873451" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="242" ControlType="XRTableCell" Name="explo_bio" Weight="3" CanShrink="true" ProcessNullValues="SuppressAndShrink" Text="Biologie à faire à l'exterieur :" Dpi="254" Font="Times New Roman, 9pt, style=Bold">
+                                          <StylePriority Ref="243" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item4>
+                                    <Item5 Ref="244" ControlType="XRTableRow" Name="xrTableRow30" Weight="0.86077036688734521" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="245" ControlType="XRTableCell" Name="xrTableCell81" Weight="3" CanShrink="true" Text="aze" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="246" EventName="BeforePrint" PropertyName="Text" Expression="[bio2]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="247" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item5>
+                                    <Item6 Ref="248" ControlType="XRTableRow" Name="xrTableRow153" Weight="0.860770366887345" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="249" ControlType="XRTableCell" Name="bio_a_faire_a_la_clin" Weight="3" CanShrink="true" ProcessNullValues="SuppressAndShrink" Text="Biologie à faire à la clinique :" Dpi="254" Font="Times New Roman, 9pt, style=Bold">
+                                          <StylePriority Ref="250" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item6>
+                                    <Item7 Ref="251" ControlType="XRTableRow" Name="xrTableRow27" Weight="0.860770366887345" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="252" ControlType="XRTableCell" Name="xrTableCell71" Weight="3" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="253" EventName="BeforePrint" PropertyName="Text" Expression="[Bio]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="254" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item7>
+                                    <Item8 Ref="255" ControlType="XRTableRow" Name="xrTableRow9" Weight="0.860770366887345" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="256" ControlType="XRTableCell" Name="xrTableCell47" Weight="1.5601629517757434" CanShrink="true" TextFormatString="Groupe sanguin : {0}" ProcessNullValues="SuppressAndShrink" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="257" EventName="BeforePrint" PropertyName="Text" Expression="[GroupeSanguin]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="258" UseFont="false" />
+                                        </Item1>
+                                        <Item2 Ref="259" ControlType="XRTableCell" Name="xrTableCell59" Weight="1.4398370482242564" CanShrink="true" ProcessNullValues="SuppressAndShrink" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="260" EventName="BeforePrint" PropertyName="Text" Expression="[GB]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="261" UseFont="false" />
+                                        </Item2>
+                                      </Cells>
+                                    </Item8>
+                                  </Rows>
+                                  <StylePriority Ref="262" UsePadding="false" UseBorders="false" />
+                                </Item1>
+                                <Item2 Ref="263" ControlType="XRLabel" Name="xrLabel5" Text="EXPLORATIONS PREOPERATOIRES" TextAlignment="MiddleCenter" SizeF="660,47" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="10,10,0,0,254" Borders="None">
+                                  <StylePriority Ref="264" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="265" UseFont="false" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item5>
+                      </Rows>
+                      <StylePriority Ref="266" UseBorders="false" UseBorderWidth="false" />
+                    </Item1>
+                  </Controls>
+                  <StylePriority Ref="267" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="268" ControlType="XRTableCell" Name="MilieuCell" Weight="1.0343520790361402" CanShrink="true" Multiline="true" Text="MilieuCell" Dpi="254" Borders="Left, Top, Right">
+                  <Controls>
+                    <Item1 Ref="269" ControlType="XRTable" Name="Milieu" SizeF="660,1500.00037" LocationFloat="0,0" Dpi="254" Borders="Left, Right">
+                      <Rows>
+                        <Item1 Ref="270" ControlType="XRTableRow" Name="AllergieRow" Weight="0.36873443351497992" Dpi="254" Borders="All">
+                          <Cells>
+                            <Item1 Ref="271" ControlType="XRTableCell" Name="Allergie" Weight="4.4878827210207781" CanShrink="true" Text="Allergie" Dpi="254" Font="Times New Roman, 11pt, charSet=0" Borders="Top, Bottom">
+                              <Controls>
+                                <Item1 Ref="272" ControlType="XRTable" Name="xrTable20" SizeF="660,80" LocationFloat="0,47" Dpi="254" Borders="None">
+                                  <Rows>
+                                    <Item1 Ref="273" ControlType="XRTableRow" Name="xrTableRow62" Weight="0.6153831855316747" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="274" ControlType="XRTableCell" Name="all_rhinoconj" Weight="3" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="275" EventName="BeforePrint" PropertyName="Text" Expression="?Allergies" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="276" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item1>
+                                    <Item2 Ref="277" ControlType="XRTableRow" Name="xrTableRow63" Weight="0.61538315600617288" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="278" ControlType="XRTableCell" Name="xrTableCell154" Weight="3" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="279" EventName="BeforePrint" PropertyName="Text" Expression="[AllText]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="280" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item2>
+                                  </Rows>
+                                  <StylePriority Ref="281" UseBorders="false" />
+                                </Item1>
+                                <Item2 Ref="282" ControlType="XRLabel" Name="xrLabel10" AutoWidth="true" Text="ALLERGIE" TextAlignment="MiddleCenter" SizeF="660,47" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="5,5,0,0,254" Borders="None">
+                                  <StylePriority Ref="283" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="284" UseFont="false" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                          <StylePriority Ref="285" UseBorders="false" />
+                        </Item1>
+                        <Item2 Ref="286" ControlType="XRTableRow" Name="HemostaseRow" Weight="0.46091731285447124" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="287" ControlType="XRTableCell" Name="Hemostase" Weight="5.9757654412660113" Text="Hemostase" Dpi="254" Font="Times New Roman, 12pt, charSet=0" Borders="Bottom">
+                              <Controls>
+                                <Item1 Ref="288" ControlType="XRLabel" Name="xrLabel21" Text="HEMOSTASE" TextAlignment="MiddleCenter" SizeF="660,47" LocationFloat="0,0.0001831055" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="5,5,0,0,254" Borders="None">
+                                  <StylePriority Ref="289" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item1>
+                                <Item2 Ref="290" ControlType="XRTable" Name="table2" SizeF="660,70.49542" LocationFloat="0,47" Dpi="254" Borders="None">
+                                  <Rows>
+                                    <Item1 Ref="291" ControlType="XRTableRow" Name="tableRow9" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="292" ControlType="XRTableCell" Name="tableCell12" Weight="3" CanShrink="true" Multiline="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="293" EventName="BeforePrint" PropertyName="Text" Expression="?HemoRisqueThrombo" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="294" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item1>
+                                    <Item2 Ref="295" ControlType="XRTableRow" Name="tableRow32" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="296" ControlType="XRTableCell" Name="tableCell39" Weight="3" CanShrink="true" Multiline="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="297" EventName="BeforePrint" PropertyName="Text" Expression="?HemoRisqueHemorragie" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="298" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item2>
+                                  </Rows>
+                                  <StylePriority Ref="299" UsePadding="false" UseBorders="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="300" UseFont="false" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item2>
+                        <Item3 Ref="301" ControlType="XRTableRow" Name="PulmoRow" Weight="0.6452841988709177" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="302" ControlType="XRTableCell" Name="Pulmo" Weight="1.0153845761172431" CanShrink="true" ProcessNullValues="SuppressAndShrink" Text="Pulmo" Dpi="254" Borders="Bottom">
+                              <Controls>
+                                <Item1 Ref="303" ControlType="XRTable" Name="table6" SizeF="660,281.733978" LocationFloat="0,47" Dpi="254" Font="Times New Roman, 9pt" Borders="None">
+                                  <Rows>
+                                    <Item1 Ref="304" ControlType="XRTableRow" Name="tableRow12" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="305" ControlType="XRTableCell" Name="tableCell14" Weight="3" CanShrink="true" TextFormatString="Antecedents : {0}" Multiline="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="306" EventName="BeforePrint" PropertyName="Text" Expression="[ListePulmoAntecedent]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="307" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item1>
+                                    <Item2 Ref="308" ControlType="XRTableRow" Name="tableRow13" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="309" ControlType="XRTableCell" Name="tableCell15" Weight="3" CanShrink="true" Multiline="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="310" EventName="BeforePrint" PropertyName="Text" Expression="[PulmoAtcdText]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="311" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item2>
+                                    <Item3 Ref="312" ControlType="XRTableRow" Name="tableRow15" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="313" ControlType="XRTableCell" Name="tableCell17" Weight="3" CanShrink="true" Text="Symptomatologie : " Dpi="254" Font="Times New Roman, 9pt, style=Bold">
+                                          <StylePriority Ref="314" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item3>
+                                    <Item4 Ref="315" ControlType="XRTableRow" Name="tableRow16" Weight="0.99297227611846606" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="316" ControlType="XRTableCell" Name="tableCell18" Weight="3" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="317" EventName="BeforePrint" PropertyName="Text" Expression="?PulmoSympto" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="318" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item4>
+                                    <Item5 Ref="319" ControlType="XRTableRow" Name="tableRow34" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="320" ControlType="XRTableCell" Name="tableCell41" Weight="3" CanShrink="true" Multiline="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="321" EventName="BeforePrint" PropertyName="Text" Expression="[PulmoText]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="322" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item5>
+                                    <Item6 Ref="323" ControlType="XRTableRow" Name="tableRow17" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="324" ControlType="XRTableCell" Name="tableCell19" Weight="0.843655118075284" Text="Examens : " Dpi="254" Font="Times New Roman, 9pt, style=Bold">
+                                          <StylePriority Ref="325" UseFont="false" />
+                                        </Item1>
+                                        <Item2 Ref="326" ControlType="XRTableCell" Name="tableCell20" Weight="2.1563448819247157" CanShrink="true" TextFormatString="SPO2 : {0} %" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="327" EventName="BeforePrint" PropertyName="Text" Expression="[PulmoSpo2]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="328" UseFont="false" />
+                                        </Item2>
+                                      </Cells>
+                                    </Item6>
+                                    <Item7 Ref="329" ControlType="XRTableRow" Name="tableRow36" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="330" ControlType="XRTableCell" Name="tableCell43" Weight="1.5" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="331" EventName="BeforePrint" PropertyName="Text" Expression="?PulmoExam" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="332" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item7>
+                                    <Item8 Ref="333" ControlType="XRTableRow" Name="tableRow37" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="334" ControlType="XRTableCell" Name="tableCell44" Weight="4.5" CanShrink="true" TextFormatString="{0}" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="335" EventName="BeforePrint" PropertyName="Text" Expression="[CvExamCliniquePulmo]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="336" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item8>
+                                  </Rows>
+                                  <StylePriority Ref="337" UseFont="false" UsePadding="false" UseBorders="false" />
+                                </Item1>
+                                <Item2 Ref="338" ControlType="XRLabel" Name="xrLabel127" Text="PULMONAIRE" TextAlignment="MiddleCenter" SizeF="660,47" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="5,5,0,0,254" Borders="None">
+                                  <StylePriority Ref="339" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="340" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item3>
+                        <Item4 Ref="341" ControlType="XRTableRow" Name="NeuroPsyRow" Weight="0.36873384704957035" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="342" ControlType="XRTableCell" Name="NeuroPsy" Weight="1.0153845761172431" CanShrink="true" Text="NeuroPsy" Dpi="254" Borders="Bottom">
+                              <Controls>
+                                <Item1 Ref="343" ControlType="XRTable" Name="xrTable30" SizeF="660,120.6252" LocationFloat="0,47" Dpi="254" Borders="None">
+                                  <Rows>
+                                    <Item1 Ref="344" ControlType="XRTableRow" Name="xrTableRow107" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="345" ControlType="XRTableCell" Name="neuro_atcds" Weight="3" CanShrink="true" TextFormatString="Antecedents : {0}" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="346" EventName="BeforePrint" PropertyName="Text" Expression="[ListeNeuroAntecedent]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="347" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item1>
+                                    <Item2 Ref="348" ControlType="XRTableRow" Name="xrTableRow24" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="349" ControlType="XRTableCell" Name="neuro_ras" Weight="3" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="350" EventName="BeforePrint" PropertyName="Text" Expression="?Neuro" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="351" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item2>
+                                    <Item3 Ref="352" ControlType="XRTableRow" Name="xrTableRow112" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="353" ControlType="XRTableCell" Name="xrTableCell247" Weight="3" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="354" EventName="BeforePrint" PropertyName="Text" Expression="[NeroAutreText]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="355" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item3>
+                                  </Rows>
+                                  <StylePriority Ref="356" UseBorders="false" />
+                                </Item1>
+                                <Item2 Ref="357" ControlType="XRLabel" Name="xrLabel49" CanShrink="true" Text="NEURO PSYCHIATRIE" TextAlignment="MiddleCenter" SizeF="660,47" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="5,5,0,0,254" Borders="None">
+                                  <StylePriority Ref="358" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="359" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item4>
+                        <Item5 Ref="360" ControlType="XRTableRow" Name="UroNephroRow" Weight="0.46091727955430517" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="361" ControlType="XRTableCell" Name="UroNephro" Weight="2.5044886480323223" CanShrink="true" ProcessNullValues="SuppressAndShrink" Text="UroNephro" Dpi="254" Borders="Bottom">
+                              <Controls>
+                                <Item1 Ref="362" ControlType="XRTable" Name="xrTable32" SizeF="660,217.188" LocationFloat="0,47" Dpi="254" Borders="None">
+                                  <Rows>
+                                    <Item1 Ref="363" ControlType="XRTableRow" Name="xrTableRow116" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="364" ControlType="XRTableCell" Name="uro_atcds" Weight="3" CanShrink="true" TextFormatString="Antecedents : {0}" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="365" EventName="BeforePrint" PropertyName="Text" Expression="[ListeUroNephroAntecedent]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="366" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item1>
+                                    <Item2 Ref="367" ControlType="XRTableRow" Name="xrTableRow25" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="368" ControlType="XRTableCell" Name="uro_ras" Weight="3" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="369" EventName="BeforePrint" PropertyName="Text" Expression="?UroNephrologie" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="370" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item2>
+                                    <Item3 Ref="371" ControlType="XRTableRow" Name="xrTableRow119" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="372" ControlType="XRTableCell" Name="xrTableCell258" Weight="1.3964528764224906" CanShrink="true" TextFormatString="MDRD : {0}" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="373" EventName="BeforePrint" PropertyName="Text" Expression="[UroMdrd]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="374" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item3>
+                                    <Item4 Ref="375" ControlType="XRTableRow" Name="tableRow18" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="376" ControlType="XRTableCell" Name="xrTableCell259" Weight="4.60354712357751" CanShrink="true" TextFormatString="Créatinine : {0}" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="377" EventName="BeforePrint" PropertyName="Text" Expression="[UroCreat]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="378" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item4>
+                                    <Item5 Ref="379" ControlType="XRTableRow" Name="xrTableRow118" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="380" ControlType="XRTableCell" Name="xrTableCell257" Weight="3" CanShrink="true" TextFormatString="{0}" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="381" EventName="BeforePrint" PropertyName="Text" Expression="[UroText]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="382" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item5>
+                                    <Item6 Ref="383" ControlType="XRTableRow" Name="tableRow39" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="384" ControlType="XRTableCell" Name="tableCell46" Weight="3" Multiline="true" Text="tableCell46" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="385" EventName="BeforePrint" PropertyName="Text" Expression="[UroNephroCommentaire]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="386" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item6>
+                                  </Rows>
+                                  <StylePriority Ref="387" UseBorders="false" />
+                                </Item1>
+                                <Item2 Ref="388" ControlType="XRLabel" Name="xrLabel140" Text="URO-NEPHROLOGIE" TextAlignment="MiddleCenter" SizeF="660,47" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="5,5,0,0,254" Borders="None">
+                                  <StylePriority Ref="389" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="390" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item5>
+                        <Item6 Ref="391" ControlType="XRTableRow" Name="ExamenColonneRow" Weight="0.27655037900446844" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="392" ControlType="XRTableCell" Name="ExamenColonne" Weight="3.9935927199474013" CanShrink="true" ProcessNullValues="SuppressAndShrink" Text="ExamenColonne" Dpi="254" Borders="Bottom">
+                              <Controls>
+                                <Item1 Ref="393" ControlType="XRTable" Name="table3" SizeF="660,80" LocationFloat="0,47" Dpi="254" Borders="None">
+                                  <Rows>
+                                    <Item1 Ref="394" ControlType="XRTableRow" Name="tableRow20" Weight="1.1050332539790433" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="395" ControlType="XRTableCell" Name="tableCell21" Weight="3" TextFormatString="Examen : {0}" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="396" EventName="BeforePrint" PropertyName="Text" Expression="?ExamColonne" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="397" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item1>
+                                    <Item2 Ref="398" ControlType="XRTableRow" Name="tableRow21" Weight="1.1050332539790433" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="399" ControlType="XRTableCell" Name="tableCell22" Weight="3" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="400" EventName="BeforePrint" PropertyName="Text" Expression="[FreeText1]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="401" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item2>
+                                  </Rows>
+                                  <StylePriority Ref="402" UseBorders="false" />
+                                </Item1>
+                                <Item2 Ref="403" ControlType="XRLabel" Name="xrLabel91" Text="EXAMEN COLONNE" TextAlignment="MiddleCenter" SizeF="660,47.00012" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 9pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="5,5,0,0,254" Borders="None">
+                                  <StylePriority Ref="404" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="405" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item6>
+                        <Item7 Ref="406" ControlType="XRTableRow" Name="tableRow30" Weight="0.1843669768511835" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="407" ControlType="XRTableCell" Name="tableCell34" Weight="3.9935927199474013" CanShrink="true" Multiline="true" Text="tableCell34" Dpi="254" Borders="None">
+                              <Controls>
+                                <Item1 Ref="408" ControlType="XRLabel" Name="xrLabel14" Text="ANTECEDENTS OBSTETRICAUX" TextAlignment="MiddleCenter" SizeF="660,47" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="5,5,0,0,254" Borders="None">
+                                  <StylePriority Ref="409" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item1>
+                                <Item2 Ref="410" ControlType="XRLabel" Name="xrLabel18" SizeF="660,40" LocationFloat="0,47" Dpi="254" Font="Times New Roman, 9pt" Padding="10,0,0,0,254" Borders="None">
+                                  <ExpressionBindings>
+                                    <Item1 Ref="411" EventName="BeforePrint" PropertyName="Text" Expression="[FreeText2]" />
+                                  </ExpressionBindings>
+                                  <StylePriority Ref="412" UseFont="false" UsePadding="false" UseBorders="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="413" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item7>
+                      </Rows>
+                      <StylePriority Ref="414" UseBorders="false" />
+                    </Item1>
+                  </Controls>
+                  <StylePriority Ref="415" UseBorders="false" />
+                </Item2>
+                <Item3 Ref="416" ControlType="XRTableCell" Name="DroiteCell" Weight="1.0343520790361402" CanShrink="true" Multiline="true" Text="DroiteCell" Dpi="254" Borders="Left, Top, Right">
+                  <Controls>
+                    <Item1 Ref="417" ControlType="XRTable" Name="Droite" SizeF="660,1480" LocationFloat="0,0" Dpi="254" Borders="None">
+                      <Rows>
+                        <Item1 Ref="418" ControlType="XRTableRow" Name="HabitudesRow" Weight="0.70645590070499853" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="419" ControlType="XRTableCell" Name="Habitudes" Weight="1.5121172789792214" CanShrink="true" Text="Habitudes" Dpi="254" Font="Times New Roman, 11pt, charSet=0" Borders="Bottom">
+                              <Controls>
+                                <Item1 Ref="420" ControlType="XRTable" Name="xrTable21" SizeF="660,123.6561" LocationFloat="0,47" Dpi="254" Borders="None">
+                                  <Rows>
+                                    <Item1 Ref="421" ControlType="XRTableRow" Name="xrTableRow67" Weight="0.97043331219954365" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="422" ControlType="XRTableCell" Name="xrTableCell151" Weight="0.6814371789208703" CanShrink="true" Text="Tabac : " Dpi="254" Font="Times New Roman, 9pt">
+                                          <StylePriority Ref="423" UseFont="false" />
+                                        </Item1>
+                                        <Item2 Ref="424" ControlType="XRTableCell" Name="tabac_oui" Weight="0.45429145567591772" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="425" EventName="BeforePrint" PropertyName="Text" Expression="?TabacOui" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="426" UseFont="false" />
+                                        </Item2>
+                                        <Item3 Ref="427" ControlType="XRTableCell" Name="xrTableCell159" Weight="1.8642713654032121" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="428" EventName="BeforePrint" PropertyName="Text" Expression="[TabacText]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="429" UseFont="false" />
+                                        </Item3>
+                                      </Cells>
+                                    </Item1>
+                                    <Item2 Ref="430" ControlType="XRTableRow" Name="xrTableRow69" Weight="1.0295666878004561" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="431" ControlType="XRTableCell" Name="xrTableCell165" Weight="0.6814371789208703" CanShrink="true" Text="Alcool : " Dpi="254" Font="Times New Roman, 9pt">
+                                          <StylePriority Ref="432" UseFont="false" />
+                                        </Item1>
+                                        <Item2 Ref="433" ControlType="XRTableCell" Name="alcool_oui" Weight="0.45429147300576128" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="434" EventName="BeforePrint" PropertyName="Text" Expression="?AlcoolOui" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="435" UseFont="false" />
+                                        </Item2>
+                                        <Item3 Ref="436" ControlType="XRTableCell" Name="xrTableCell169" Weight="1.8642713480733684" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="437" EventName="BeforePrint" PropertyName="Text" Expression="[AlcoolText]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="438" UseFont="false" />
+                                        </Item3>
+                                      </Cells>
+                                    </Item2>
+                                    <Item3 Ref="439" ControlType="XRTableRow" Name="xrTableRow68" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="440" ControlType="XRTableCell" Name="xrTableCell161" Weight="0.68143717986900543" CanShrink="true" Text="Toxico : " Dpi="254" Font="Times New Roman, 9pt">
+                                          <StylePriority Ref="441" UseFont="false" />
+                                        </Item1>
+                                        <Item2 Ref="442" ControlType="XRTableCell" Name="toxico_oui" Weight="0.45429147205762616" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="443" EventName="BeforePrint" PropertyName="Text" Expression="?ToxicoOui" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="444" UseFont="false" />
+                                        </Item2>
+                                        <Item3 Ref="445" ControlType="XRTableCell" Name="xrTableCell164" Weight="1.8642713480733684" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="446" EventName="BeforePrint" PropertyName="Text" Expression="[ToxicoText]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="447" UseFont="false" />
+                                        </Item3>
+                                      </Cells>
+                                    </Item3>
+                                  </Rows>
+                                  <StylePriority Ref="448" UseBorders="false" />
+                                </Item1>
+                                <Item2 Ref="449" ControlType="XRLabel" Name="xrLabel20" AutoWidth="true" Text="HABITUDES TOXIQUES" TextAlignment="MiddleCenter" SizeF="660,47" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="0,0,3,0,254" Borders="None">
+                                  <StylePriority Ref="450" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="451" UseFont="false" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item1>
+                        <Item2 Ref="452" ControlType="XRTableRow" Name="MCJRow" Weight="0.35322800017982592" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="453" ControlType="XRTableCell" Name="MCJ" Weight="2.2681759188566049" CanShrink="true" Text="MCJ" Dpi="254" Borders="Bottom">
+                              <Controls>
+                                <Item1 Ref="454" ControlType="XRLabel" Name="xrLabel24" CanShrink="true" SizeF="660,40" LocationFloat="0,47" Dpi="254" Font="Times New Roman, 9pt" Padding="5,5,0,0,254" Borders="None">
+                                  <ExpressionBindings>
+                                    <Item1 Ref="455" EventName="BeforePrint" PropertyName="Text" Expression="?MCJText" />
+                                  </ExpressionBindings>
+                                  <StylePriority Ref="456" UseFont="false" UseBorders="false" />
+                                </Item1>
+                                <Item2 Ref="457" ControlType="XRLabel" Name="xrLabel28" Text="MCJ" TextAlignment="MiddleCenter" SizeF="660,47" LocationFloat="0,6.103516E-05" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="0,0,2,0,254" Borders="None">
+                                  <StylePriority Ref="458" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="459" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item2>
+                        <Item3 Ref="460" ControlType="XRTableRow" Name="DigestifRow" Weight="0.77710156135058484" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="461" ControlType="XRTableCell" Name="Digestif" Weight="3.2527913427393615" CanShrink="true" ProcessNullValues="SuppressAndShrink" Text="Digestif" Dpi="254" Borders="Bottom">
+                              <Controls>
+                                <Item1 Ref="462" ControlType="XRTable" Name="xrTable26" SizeF="660,159.999969" LocationFloat="0,47" Dpi="254" Borders="None">
+                                  <Rows>
+                                    <Item1 Ref="463" ControlType="XRTableRow" Name="xrTableRow15" Weight="0.62800495822659119" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="464" ControlType="XRTableCell" Name="dig_atcds" Weight="3" CanShrink="true" TextFormatString="Antecedents : {0}" Dpi="254" Font="Times New Roman, 9pt" Padding="10,10,0,0,254">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="465" EventName="BeforePrint" PropertyName="Text" Expression="[ListeDigestifAntecedent]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="466" UseFont="false" UsePadding="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item1>
+                                    <Item2 Ref="467" ControlType="XRTableRow" Name="tableRow33" Weight="0.62800495822659119" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="468" ControlType="XRTableCell" Name="tableCell40" Weight="3" CanShrink="true" Multiline="true" Dpi="254" Font="Times New Roman, 9pt" Padding="10,10,0,0,254">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="469" EventName="BeforePrint" PropertyName="Text" Expression="[DigText]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="470" UseFont="false" UsePadding="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item2>
+                                    <Item3 Ref="471" ControlType="XRTableRow" Name="xrTableRow23" Weight="0.62800495822659119" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="472" ControlType="XRTableCell" Name="dig_ras" Weight="3" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt" Padding="10,10,0,0,254">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="473" EventName="BeforePrint" PropertyName="Text" Expression="?Dig" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="474" UseFont="false" UsePadding="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item3>
+                                    <Item4 Ref="475" ControlType="XRTableRow" Name="tableRow14" Weight="0.62800495822659119" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="476" ControlType="XRTableCell" Name="tableCell16" Weight="3" CanShrink="true" Multiline="true" Dpi="254" Font="Times New Roman, 9pt" Padding="10,10,0,0,254">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="477" EventName="BeforePrint" PropertyName="Text" Expression="?DigAins" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="478" UseFont="false" UsePadding="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item4>
+                                  </Rows>
+                                  <StylePriority Ref="479" UseBorders="false" />
+                                </Item1>
+                                <Item2 Ref="480" ControlType="XRLabel" Name="xrLabel147" Text="DIGESTIF" TextAlignment="MiddleCenter" SizeF="660,47" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="0,0,0,0,254" Borders="None">
+                                  <StylePriority Ref="481" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="482" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item3>
+                        <Item4 Ref="483" ControlType="XRTableRow" Name="MetabolismeRow" Weight="0.45919637766198573" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="484" ControlType="XRTableCell" Name="tableCell35" Weight="3.2527913427393615" CanShrink="true" Multiline="true" Text="tableCell35" Dpi="254" Borders="Bottom">
+                              <Controls>
+                                <Item1 Ref="485" ControlType="XRLabel" Name="xrLabel75" Text="METABOLISME" TextAlignment="MiddleCenter" SizeF="660,47" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="5,5,0,0,254" Borders="None">
+                                  <StylePriority Ref="486" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item1>
+                                <Item2 Ref="487" ControlType="XRTable" Name="xrTable31" SizeF="660,80" LocationFloat="0,47" Dpi="254" Borders="None">
+                                  <Rows>
+                                    <Item1 Ref="488" ControlType="XRTableRow" Name="xrTableRow111" Weight="0.99481698544200114" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="489" ControlType="XRTableCell" Name="scores_lee_did" Weight="3.0000000000000004" CanShrink="true" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="490" EventName="BeforePrint" PropertyName="Text" Expression="?Metabolisme" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="491" UseFont="false" UseTextAlignment="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item1>
+                                    <Item2 Ref="492" ControlType="XRTableRow" Name="xrTableRow113" Weight="0.994816985442001" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="493" ControlType="XRTableCell" Name="xrTableCell253" Weight="3.0000000000000004" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="494" EventName="BeforePrint" PropertyName="Text" Expression="[MetaDnidText]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="495" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item2>
+                                  </Rows>
+                                  <StylePriority Ref="496" UseBorders="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="497" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item4>
+                        <Item5 Ref="498" ControlType="XRTableRow" Name="DiversRow" Weight="0.35322797333056222" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="499" ControlType="XRTableCell" Name="Divers" Weight="4.0082393067818218" CanShrink="true" ProcessNullValues="SuppressAndShrink" Text="Divers" Dpi="254" Borders="Bottom">
+                              <Controls>
+                                <Item1 Ref="500" ControlType="XRTable" Name="xrTable33" SizeF="660,40" LocationFloat="0,46.99997" Dpi="254" Borders="None">
+                                  <Rows>
+                                    <Item1 Ref="501" ControlType="XRTableRow" Name="xrTableRow124" Weight="0.66303219415564785" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="502" ControlType="XRTableCell" Name="xrTableCell271" Weight="3" CanShrink="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="503" EventName="BeforePrint" PropertyName="Text" Expression="[DivText]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="504" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item1>
+                                  </Rows>
+                                  <StylePriority Ref="505" UseBorders="false" />
+                                </Item1>
+                                <Item2 Ref="506" ControlType="XRLabel" Name="xrLabel163" Text="DIVERS" TextAlignment="MiddleCenter" SizeF="660,47" LocationFloat="6.103516E-05,0" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="5,5,0,0,254" Borders="None">
+                                  <StylePriority Ref="507" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="508" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item5>
+                        <Item6 Ref="509" ControlType="XRTableRow" Name="RisquesRow" Weight="0.989038374767217" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="510" ControlType="XRTableCell" Name="Risques" Weight="4.7636872708242821" CanShrink="true" ProcessNullValues="SuppressAndShrink" Text="Risques" Dpi="254" Borders="Bottom">
+                              <Controls>
+                                <Item1 Ref="511" ControlType="XRTable" Name="xrTable35" SizeF="660,240" LocationFloat="0,47.00024" Dpi="254" Borders="None">
+                                  <Rows>
+                                    <Item1 Ref="512" ControlType="XRTableRow" Name="xrTableRow130" Weight="0.86715975661941058" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="513" ControlType="XRTableCell" Name="xrTableCell270" Weight="1.5" CanShrink="true" TextFormatString="ASA : {0}" ProcessNullValues="SuppressAndShrink" Dpi="254" Font="Times New Roman, 9pt, style=Bold">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="514" EventName="BeforePrint" PropertyName="Text" Expression="[ScoresAsa]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="515" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item1>
+                                    <Item2 Ref="516" ControlType="XRTableRow" Name="tableRow19" Weight="0.86715975661941047" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="517" ControlType="XRTableCell" Name="xrTableCell288" Weight="4.5" CanShrink="true" TextFormatString="NYHA : {0}" ProcessNullValues="SuppressAndShrink" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="518" EventName="BeforePrint" PropertyName="Text" Expression="[ScoresNyha]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="519" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item2>
+                                    <Item3 Ref="520" ControlType="XRTableRow" Name="xrTableRow131" Weight="0.86715975661941058" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="521" ControlType="XRTableCell" Name="scores_urgence" Weight="3" CanShrink="true" ProcessNullValues="SuppressAndShrink" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="522" EventName="BeforePrint" PropertyName="Text" Expression="?ScoresUrgence" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="523" UseFont="false" UseTextAlignment="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item3>
+                                    <Item4 Ref="524" ControlType="XRTableRow" Name="xrTableRow132" Weight="0.86715975661941069" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="525" ControlType="XRTableCell" Name="xrTableCell40" Weight="3.0000000000000004" CanShrink="true" TextFormatString="LEE : {0}" ProcessNullValues="SuppressAndShrink" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="526" EventName="BeforePrint" PropertyName="Text" Expression="[ScoresLee]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="527" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item4>
+                                    <Item5 Ref="528" ControlType="XRTableRow" Name="xrTableRow133" Weight="0.86715992201701453" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="529" ControlType="XRTableCell" Name="xrTableCell43" Weight="3" CanShrink="true" TextFormatString="APFEL : {0}" ProcessNullValues="SuppressAndShrink" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="530" EventName="BeforePrint" PropertyName="Text" Expression="[ScoresApfel]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="531" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item5>
+                                    <Item6 Ref="532" ControlType="XRTableRow" Name="tableRow40" Weight="0.86715992201701453" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="533" ControlType="XRTableCell" Name="tableCell47" Weight="1.5" TextFormatString="Score Stop-Bang : {0}" Multiline="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="534" EventName="BeforePrint" PropertyName="Text" Expression="[ScoreStopBang]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="535" UseFont="false" />
+                                        </Item1>
+                                        <Item2 Ref="536" ControlType="XRTableCell" Name="tableCell48" Weight="1.5" TextFormatString="Risque SAS : {0}" Multiline="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="537" EventName="BeforePrint" PropertyName="Text" Expression="[RisqueSAS]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="538" UseFont="false" />
+                                        </Item2>
+                                      </Cells>
+                                    </Item6>
+                                  </Rows>
+                                  <StylePriority Ref="539" UseBorders="false" />
+                                </Item1>
+                                <Item2 Ref="540" ControlType="XRLabel" Name="xrLabel77" Text="SCORES DE RISQUES" TextAlignment="MiddleCenter" SizeF="660,47" LocationFloat="6.103516E-05,0" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="5,5,0,0,254" Borders="None">
+                                  <StylePriority Ref="541" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="542" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item6>
+                        <Item7 Ref="543" ControlType="XRTableRow" Name="tableRow28" Weight="1.5895259437728986" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="544" ControlType="XRTableCell" Name="Intubation" Weight="8.9990581318464784" CanShrink="true" ProcessNullValues="SuppressAndShrink" Text="Intubation" Dpi="254" Font="Times New Roman, 11pt, charSet=0" Borders="None">
+                              <Controls>
+                                <Item1 Ref="545" ControlType="XRTable" Name="xrTable36" SizeF="660,369.144531" LocationFloat="0,47" Dpi="254" Borders="None">
+                                  <Rows>
+                                    <Item1 Ref="546" ControlType="XRTableRow" Name="xrTableRow134" Weight="0.96837400691526832" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="547" ControlType="XRTableCell" Name="xrTableCell278" Weight="1.5474059142138794" CanShrink="true" Text="Denture :" TextAlignment="MiddleLeft" Dpi="254" Font="Times New Roman, 9pt">
+                                          <StylePriority Ref="548" UseFont="false" UseTextAlignment="false" />
+                                        </Item1>
+                                        <Item2 Ref="549" ControlType="XRTableCell" Name="tableCell23" Weight="4.42214445285314" Multiline="true" TextAlignment="MiddleLeft" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="550" EventName="BeforePrint" PropertyName="Text" Expression="?Dents" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="551" UseFont="false" UseTextAlignment="false" />
+                                        </Item2>
+                                      </Cells>
+                                    </Item1>
+                                    <Item2 Ref="552" ControlType="XRTableRow" Name="xrTableRow136" Weight="1.1265043383232622" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="553" ControlType="XRTableCell" Name="xrTableCell295" Weight="5.96955036706702" CanShrink="true" TextFormatString="Dents fragiles : {0}" ProcessNullValues="SuppressAndShrink" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="554" EventName="BeforePrint" PropertyName="Text" Expression="[DentFragiles]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="555" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item2>
+                                    <Item3 Ref="556" ControlType="XRTableRow" Name="xrTableRow18" Weight="0.96837391541918438" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="557" ControlType="XRTableCell" Name="xrTableCell38" Weight="5.9695503670670194" CanShrink="true" ProcessNullValues="SuppressAndShrink" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="558" EventName="BeforePrint" PropertyName="Text" Expression="[DentDetails]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="559" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item3>
+                                    <Item4 Ref="560" ControlType="XRTableRow" Name="xrTableRow137" Weight="0.96837391541918449" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="561" ControlType="XRTableCell" Name="dent_paro" Weight="5.9695503670670194" CanShrink="true" Multiline="true" ProcessNullValues="SuppressAndShrink" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="562" EventName="BeforePrint" PropertyName="Text" Expression="?DentsParo" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="563" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item4>
+                                    <Item5 Ref="564" ControlType="XRTableRow" Name="intub3" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="565" ControlType="XRTableCell" Name="intub" Weight="5.9695503670670194" Text="Intubation prévue :" Dpi="254" Font="Times New Roman, 9pt">
+                                          <StylePriority Ref="566" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item5>
+                                    <Item6 Ref="567" ControlType="XRTableRow" Name="intub1" Weight="0.96837391541918438" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="568" ControlType="XRTableCell" Name="mallampati" Weight="5.96955036706702" CanShrink="true" TextFormatString="Mallampati : {0}" ProcessNullValues="SuppressAndShrink" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="569" EventName="BeforePrint" PropertyName="Text" Expression="[Mallampati]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="570" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item6>
+                                    <Item7 Ref="571" ControlType="XRTableRow" Name="xrTableRow31" Weight="0.96837391541918438" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="572" ControlType="XRTableCell" Name="xrTableCell12" Weight="5.9695503670670194" CanShrink="true" TextFormatString="Ouverture de bouche : {0}" ProcessNullValues="SuppressAndShrink" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="573" EventName="BeforePrint" PropertyName="Text" Expression="[OuvertureBouche]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="574" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item7>
+                                    <Item8 Ref="575" ControlType="XRTableRow" Name="tableRow35" Weight="1" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="576" ControlType="XRTableCell" Name="tableCell42" Weight="5.9695503670670194" CanShrink="true" Multiline="true" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="577" EventName="BeforePrint" PropertyName="Text" Expression="?IntubationPrevue" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="578" UseFont="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item8>
+                                    <Item9 Ref="579" ControlType="XRTableRow" Name="xrTableRow140" Weight="0.9683744695272033" Dpi="254">
+                                      <Cells>
+                                        <Item1 Ref="580" ControlType="XRTableCell" Name="intub_dif_choix" Weight="5.9695503670670194" CanShrink="true" ProcessNullValues="SuppressAndShrink" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 9pt">
+                                          <ExpressionBindings>
+                                            <Item1 Ref="581" EventName="BeforePrint" PropertyName="Text" Expression="[TxtAvcait]" />
+                                          </ExpressionBindings>
+                                          <StylePriority Ref="582" UseFont="false" UseTextAlignment="false" />
+                                        </Item1>
+                                      </Cells>
+                                    </Item9>
+                                  </Rows>
+                                  <StylePriority Ref="583" UseBorders="false" />
+                                </Item1>
+                                <Item2 Ref="584" ControlType="XRLabel" Name="xrLabel4" ProcessDuplicatesMode="SuppressAndShrink" Text="INTUBATION" TextAlignment="MiddleCenter" SizeF="660,47" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="0,0,0,0,254" Borders="None">
+                                  <StylePriority Ref="585" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="586" UseFont="false" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item7>
+                      </Rows>
+                      <StylePriority Ref="587" UseBorders="false" />
+                    </Item1>
+                  </Controls>
+                  <StylePriority Ref="588" UseBorders="false" />
+                </Item3>
+              </Cells>
+            </Item5>
+            <Item6 Ref="589" ControlType="XRTableRow" Name="Bas" Weight="0.95554055916864178" Dpi="254">
+              <Cells>
+                <Item1 Ref="590" ControlType="XRTableCell" Name="tableCell33" Weight="2.8672071619859967" CanShrink="true" Multiline="true" Text="tableCell33" Dpi="254" Borders="All">
+                  <Controls>
+                    <Item1 Ref="591" ControlType="XRLabel" Name="xrLabel32" Text="ANTIBIOPROPHYLAXIE" TextAlignment="MiddleCenter" SizeF="660,47" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="5,5,0,0,254" Borders="Top">
+                      <StylePriority Ref="592" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    </Item1>
+                    <Item2 Ref="593" ControlType="XRLabel" Name="xrLabel65" TextFormatString="{0}" ProcessNullValues="SuppressAndShrink" SizeF="660,252.999756" LocationFloat="0,47" Dpi="254" Font="Times New Roman, 9pt" Padding="10,0,0,0,254" Borders="None">
+                      <ExpressionBindings>
+                        <Item1 Ref="594" EventName="BeforePrint" PropertyName="Text" Expression="[Antibioprophyxie]" />
+                      </ExpressionBindings>
+                      <StylePriority Ref="595" UseFont="false" UsePadding="false" UseBorders="false" />
+                    </Item2>
+                  </Controls>
+                  <StylePriority Ref="596" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="597" ControlType="XRTableCell" Name="xrTableCell78" Weight="2.8672072707304519" CanShrink="true" Text="xrTableCell78" Dpi="254" Font="Times New Roman, 12pt, charSet=0" Borders="All">
+                  <Controls>
+                    <Item1 Ref="598" ControlType="XRTable" Name="xrTable37" SizeF="660,40" LocationFloat="0,47" Dpi="254" Borders="None">
+                      <Rows>
+                        <Item1 Ref="599" ControlType="XRTableRow" Name="xrTableRow142" Weight="0.83998321917679286" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="600" ControlType="XRTableCell" Name="label_tech_anesth" Weight="3" Multiline="true" ProcessNullValues="SuppressAndShrink" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 9pt">
+                              <ExpressionBindings>
+                                <Item1 Ref="601" EventName="BeforePrint" PropertyName="Text" Expression="?ProtoAnes" />
+                              </ExpressionBindings>
+                              <StylePriority Ref="602" UseFont="false" UseTextAlignment="false" />
+                            </Item1>
+                          </Cells>
+                        </Item1>
+                      </Rows>
+                      <StylePriority Ref="603" UseBorders="false" />
+                    </Item1>
+                    <Item2 Ref="604" ControlType="XRLabel" Name="xrLabel53" Text="TECHNIQUE ANESTHESIQUE" TextAlignment="MiddleCenter" SizeF="660,47" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="5,5,0,0,254" Borders="None">
+                      <StylePriority Ref="605" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    </Item2>
+                  </Controls>
+                  <StylePriority Ref="606" UseFont="false" UseBorders="false" />
+                </Item2>
+                <Item3 Ref="607" ControlType="XRTableCell" Name="xrTableCell82" Weight="2.8672070262096918" CanShrink="true" Text="xrTableCell82" Dpi="254" Borders="All">
+                  <Controls>
+                    <Item1 Ref="608" ControlType="XRTable" Name="table4" SizeF="660,80" LocationFloat="0,47" Dpi="254" Borders="None">
+                      <Rows>
+                        <Item1 Ref="609" ControlType="XRTableRow" Name="tableRow22" Weight="0.83998321917679286" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="610" ControlType="XRTableCell" Name="tableCell24" Weight="0.68570454337380138" CanShrink="true" ProcessNullValues="SuppressAndShrink" Text="Date:" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 9pt, style=Bold">
+                              <StylePriority Ref="611" UseFont="false" UseTextAlignment="false" />
+                            </Item1>
+                            <Item2 Ref="612" ControlType="XRTableCell" Name="tableCell52" Weight="1.8993809613314541" TextFormatString="{0:dd/MM/yy}" Multiline="true" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 9pt">
+                              <ExpressionBindings>
+                                <Item1 Ref="613" EventName="BeforePrint" PropertyName="Text" Expression="[DateValidation]" />
+                              </ExpressionBindings>
+                              <StylePriority Ref="614" UseFont="false" UseTextAlignment="false" />
+                            </Item2>
+                            <Item3 Ref="615" ControlType="XRTableCell" Name="tableCell25" Weight="1.9149144952947443" Multiline="true" Text="tableCell25" TextAlignment="TopLeft" Dpi="254">
+                              <Controls>
+                                <Item1 Ref="616" ControlType="XRCheckBox" Name="xrCheckBox20" TextAlignment="TopLeft" Text="RAS depuis CPA" SizeF="266.7651,34.41699" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 9pt" Borders="None">
+                                  <ExpressionBindings>
+                                    <Item1 Ref="617" EventName="BeforePrint" PropertyName="CheckBoxState" Expression="[RasCpa]" />
+                                  </ExpressionBindings>
+                                  <StylePriority Ref="618" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item1>
+                              </Controls>
+                              <StylePriority Ref="619" UseTextAlignment="false" />
+                            </Item3>
+                          </Cells>
+                        </Item1>
+                        <Item2 Ref="620" ControlType="XRTableRow" Name="tableRow23" Weight="0.83998321917679286" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="621" ControlType="XRTableCell" Name="tableCell26" Weight="1.5" CanShrink="true" TextFormatString="Modification: {0}" Multiline="true" TextAlignment="TopLeft" Dpi="254" Font="Times New Roman, 9pt">
+                              <ExpressionBindings>
+                                <Item1 Ref="622" EventName="BeforePrint" PropertyName="Text" Expression="[VisiteModif]" />
+                              </ExpressionBindings>
+                              <StylePriority Ref="623" UseFont="false" UseTextAlignment="false" />
+                            </Item1>
+                          </Cells>
+                        </Item2>
+                      </Rows>
+                      <StylePriority Ref="624" UseBorders="false" />
+                    </Item1>
+                    <Item2 Ref="625" ControlType="XRLabel" Name="xrLabel55" Text="VISITE PREANESTHESIQUE :" TextAlignment="MiddleCenter" SizeF="660,47" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="5,5,0,0,254" Borders="None">
+                      <StylePriority Ref="626" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                    </Item2>
+                  </Controls>
+                  <StylePriority Ref="627" UseBorders="false" />
+                </Item3>
+              </Cells>
+            </Item6>
+            <Item7 Ref="628" ControlType="XRTableRow" Name="AutresRow" Weight="3.1851356355556852" Dpi="254">
+              <Cells>
+                <Item1 Ref="629" ControlType="XRTableCell" Name="tableCell2" Weight="3.1030562371084205" CanShrink="true" Multiline="true" Text="tableCell2" Dpi="254">
+                  <Controls>
+                    <Item1 Ref="630" ControlType="XRTable" Name="Autres" SizeF="1980,580" LocationFloat="0,0" Dpi="254" Borders="Right">
+                      <Rows>
+                        <Item1 Ref="631" ControlType="XRTableRow" Name="tableRow43" Weight="0.16923257727112473" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="632" ControlType="XRTableCell" Name="tableCell1" Weight="3.046153846153846" Multiline="true" Dpi="254" Borders="Left, Right, Bottom">
+                              <StylePriority Ref="633" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item1>
+                        <Item2 Ref="634" ControlType="XRTableRow" Name="xrTableRow61" Weight="0.16923257727112473" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="635" ControlType="XRTableCell" Name="xrTableCell91" Weight="3.046153846153846" CanShrink="true" ProcessNullValues="SuppressAndShrink" Text="xrTableCell91" Dpi="254" Borders="Left, Right, Bottom">
+                              <Controls>
+                                <Item1 Ref="636" ControlType="XRLabel" Name="xrLabel8" ProcessDuplicatesMode="SuppressAndShrink" Text="TRAITEMENTS PERSONNELS" TextAlignment="MiddleCenter" SizeF="1980,47" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="0,0,0,0,254" Borders="Bottom">
+                                  <StylePriority Ref="637" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item1>
+                                <Item2 Ref="638" ControlType="XRLabel" Name="xrLabel12" CanShrink="true" SizeF="1980,40" LocationFloat="0,47" Dpi="254" Font="Times New Roman, 9pt" Padding="5,5,0,0,254" Borders="None">
+                                  <ExpressionBindings>
+                                    <Item1 Ref="639" EventName="BeforePrint" PropertyName="Text" Expression="?TraitementsPerso" />
+                                  </ExpressionBindings>
+                                  <StylePriority Ref="640" UseFont="false" UseBorders="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="641" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item2>
+                        <Item3 Ref="642" ControlType="XRTableRow" Name="tableRow24" Weight="0.18803619696791629" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="643" ControlType="XRTableCell" Name="tableCell28" Weight="3.046153846153846" Multiline="true" Text="tableCell28" Dpi="254" Borders="Left, Right, Bottom">
+                              <Controls>
+                                <Item1 Ref="644" ControlType="XRLabel" Name="xrLabel52" Text="PREMEDICATION J-1&#xD;&#xA;" TextAlignment="MiddleCenter" SizeF="400,100" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 10pt" ForeColor="Black" BackColor="LightGray" Padding="5,5,0,0,254" Borders="Right">
+                                  <StylePriority Ref="645" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item1>
+                                <Item2 Ref="646" ControlType="XRLabel" Name="xrLabel30" TextFormatString="{0}" Multiline="true" ProcessNullValues="SuppressAndShrink" Text="xrLabel30" TextAlignment="MiddleLeft" SizeF="1580,100" LocationFloat="400,0" Dpi="254" Font="Times New Roman, 9pt" BackColor="LightGray" Padding="10,0,0,0,254" Borders="Left">
+                                  <ExpressionBindings>
+                                    <Item1 Ref="647" EventName="BeforePrint" PropertyName="Text" Expression="[Premed]" />
+                                  </ExpressionBindings>
+                                  <StylePriority Ref="648" UseFont="false" UseBackColor="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="649" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item3>
+                        <Item4 Ref="650" ControlType="XRTableRow" Name="tableRow25" Weight="0.18803619696791607" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="651" ControlType="XRTableCell" Name="tableCell27" Weight="3.046153846153846" Multiline="true" Text="tableCell27" Dpi="254" Borders="Left, Right, Bottom">
+                              <Controls>
+                                <Item1 Ref="652" ControlType="XRLabel" Name="xrLabel26" Multiline="true" Text="PREMEDICATION J-0&#xD;&#xA;" TextAlignment="MiddleCenter" SizeF="400,100" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 10pt" ForeColor="Black" BackColor="WhiteSmoke" Padding="5,5,0,0,254" Borders="Right">
+                                  <StylePriority Ref="653" UseFont="false" UseForeColor="false" UseBackColor="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item1>
+                                <Item2 Ref="654" ControlType="XRLabel" Name="xrLabel27" TextFormatString="{0}" Multiline="true" ProcessNullValues="SuppressAndShrink" Text="premed2" TextAlignment="MiddleLeft" SizeF="1580,100" LocationFloat="400,0" Dpi="254" Font="Times New Roman, 9pt" BackColor="Transparent" Padding="10,0,0,0,254" Borders="None">
+                                  <ExpressionBindings>
+                                    <Item1 Ref="655" EventName="BeforePrint" PropertyName="Text" Expression="[Premed2]" />
+                                  </ExpressionBindings>
+                                  <StylePriority Ref="656" UseFont="false" UseBackColor="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="657" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item4>
+                        <Item5 Ref="658" ControlType="XRTableRow" Name="tableRow26" Weight="0.18803619696791651" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="659" ControlType="XRTableCell" Name="tableCell29" Weight="3.046153846153846" Multiline="true" Text="tableCell29" Dpi="254" Borders="Left, Right, Bottom">
+                              <Controls>
+                                <Item1 Ref="660" ControlType="XRLabel" Name="xrLabel31" ProcessDuplicatesMode="SuppressAndShrink" Text="INFORMATIONS PATIENT" TextAlignment="MiddleCenter" SizeF="1980,47" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="0,0,0,0,254" Borders="Bottom">
+                                  <StylePriority Ref="661" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item1>
+                                <Item2 Ref="662" ControlType="XRLabel" Name="xrLabel92" AutoWidth="true" CanShrink="true" ProcessNullValues="SuppressAndShrink" SizeF="1980,40" LocationFloat="0,47" Dpi="254" Font="Times New Roman, 9pt" Padding="10,0,0,0,254" Borders="None">
+                                  <ExpressionBindings>
+                                    <Item1 Ref="663" EventName="BeforePrint" PropertyName="Text" Expression="?InfoPatient" />
+                                  </ExpressionBindings>
+                                  <StylePriority Ref="664" UseFont="false" UsePadding="false" UseBorders="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="665" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item5>
+                        <Item6 Ref="666" ControlType="XRTableRow" Name="tableRow27" Weight="0.18803619696791696" Dpi="254">
+                          <Cells>
+                            <Item1 Ref="667" ControlType="XRTableCell" Name="tableCell30" Weight="3.046153846153846" Multiline="true" Text="tableCell30" Dpi="254" Borders="None">
+                              <Controls>
+                                <Item1 Ref="668" ControlType="XRLabel" Name="xrLabel76" ProcessDuplicatesMode="SuppressAndShrink" Text="COMMENTAIRES" TextAlignment="MiddleCenter" SizeF="1980,75" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 10pt, style=Bold" ForeColor="Black" BackColor="WhiteSmoke" Padding="4,0,0,0,254" Borders="Left, Right, Bottom">
+                                  <StylePriority Ref="669" UseFont="false" UseForeColor="false" UseBackColor="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+                                </Item1>
+                                <Item2 Ref="670" ControlType="XRLabel" Name="xrLabel93" Multiline="true" Text="xrLabel93" SizeF="1980,250" LocationFloat="0,75" Dpi="254" Font="Times New Roman, 9pt" Padding="5,0,0,0,254" Borders="Left, Right, Bottom">
+                                  <ExpressionBindings>
+                                    <Item1 Ref="671" EventName="BeforePrint" PropertyName="Text" Expression="[commentaires]" />
+                                  </ExpressionBindings>
+                                  <StylePriority Ref="672" UseFont="false" UsePadding="false" UseBorders="false" />
+                                </Item2>
+                              </Controls>
+                              <StylePriority Ref="673" UseBorders="false" />
+                            </Item1>
+                          </Cells>
+                        </Item6>
+                      </Rows>
+                      <StylePriority Ref="674" UseBorders="false" />
+                    </Item1>
+                  </Controls>
+                </Item1>
+              </Cells>
+            </Item7>
+          </Rows>
+        </Item1>
+      </Controls>
+      <StylePriority Ref="675" UseFont="false" UsePadding="false" />
+    </Item1>
+    <Item2 Ref="676" ControlType="TopMarginBand" Name="TopMargin" HeightF="165" TextAlignment="TopLeft" Dpi="254" Padding="0,0,0,0,254">
+      <Controls>
+        <Item1 Ref="677" ControlType="XRLabel" Name="xrLabel94" Multiline="true" Text="Consultation d’Anesthésie - Polyclinique du Beaujolais" TextAlignment="MiddleCenter" SizeF="1993.382,106" LocationFloat="0,0" Dpi="254" Font="Times New Roman, 9pt, style=Bold" BackColor="WhiteSmoke" Padding="5,5,0,0,254">
+          <StylePriority Ref="678" UseFont="false" UseBackColor="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="679" ControlType="XRLabel" Name="xrLabel16" TextFormatString="le {0:dd/MM/yyyy}" SizeF="659.5001,52.54166" LocationFloat="665.823547,110.458336" Dpi="254" Padding="5,5,0,0,254" Borders="None">
+          <ExpressionBindings>
+            <Item1 Ref="680" EventName="BeforePrint" PropertyName="Text" Expression="[DateVisite]" />
+          </ExpressionBindings>
+          <StylePriority Ref="681" UsePadding="false" UseBorders="false" />
+        </Item2>
+        <Item3 Ref="682" ControlType="XRLabel" Name="xrLabel1" TextFormatString="Dr : {0}" SizeF="659.5002,56.99999" LocationFloat="0,106" Dpi="254" Padding="5,5,0,0,254" Borders="None">
+          <ExpressionBindings>
+            <Item1 Ref="683" EventName="BeforePrint" PropertyName="Text" Expression="[NomAnesthesiste]" />
+          </ExpressionBindings>
+          <StylePriority Ref="684" UsePadding="false" UseBorders="false" />
+        </Item3>
+      </Controls>
+    </Item2>
+    <Item3 Ref="685" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="54" TextAlignment="TopLeft" Dpi="254" Padding="0,0,0,0,254" />
+  </Bands>
+  <StyleSheet>
+    <Item1 Ref="686" Name="xrControlStyle1" BorderStyle="Inset" StringFormat="Near;Near;0;None;Character;Default" />
+  </StyleSheet>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.ObjectBinding.ObjectDataSource,DevExpress.DataAccess.v21.2" Name="objectDataSource1" Base64="PE9iamVjdERhdGFTb3VyY2UgTmFtZT0ib2JqZWN0RGF0YVNvdXJjZTEiPjxDb25zdHJ1Y3RvciAvPjwvT2JqZWN0RGF0YVNvdXJjZT4=" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>
